@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import '../../index.css';
 import styled from './home.module.css';
 import { useEffect ,useState} from "react";
+import Footer from "../../components/footer/Footer";
 
 function Home (){
     const [articles,setArticles]=useState([])
@@ -13,7 +14,7 @@ function Home (){
             id:1,
             imageUrl:'',
             title:'javascript',
-            readingTime: 5,
+            readingTime: 10,
         },
         {
             id:2,
@@ -32,6 +33,30 @@ function Home (){
             imageUrl:'',
             title:'java',
             readingTime: 7,
+        },
+        {
+            id:3,
+            imageUrl:'',
+            title:'php',
+            readingTime: 6,
+        },
+        {
+            id:3,
+            imageUrl:'',
+            title:'php',
+            readingTime: 6,
+        },
+        {
+            id:3,
+            imageUrl:'',
+            title:'php',
+            readingTime: 6,
+        },
+        {
+            id:3,
+            imageUrl:'',
+            title:'php',
+            readingTime: 6,
         }])
     },[])
     return(
@@ -46,6 +71,7 @@ function Home (){
                     }
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 };

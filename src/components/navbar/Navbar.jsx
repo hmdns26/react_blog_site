@@ -1,5 +1,7 @@
 import styled from './navbar.module.css';
 import '../../index.css';
+import {Link} from "react-router-dom";
+
 function Navbar(props){
     
     return(
@@ -8,9 +10,9 @@ function Navbar(props){
             <div className={styled.header}>
             
             <ul>
-                <li>لیست مقالات</li>
+                <li><Link to="/">لیست مقالات</Link></li>
                 <li> مقاله جدید</li>
-                <li>درباره </li>
+                <li><Link to="/about">درباره</Link></li>
             </ul>
         </div>
         </div>
